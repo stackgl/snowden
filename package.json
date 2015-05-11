@@ -1,6 +1,6 @@
 {
   "name": "snowden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "3D mesh of Snowden's Bust",
   "main": "index.js",
   "license": "MIT",
