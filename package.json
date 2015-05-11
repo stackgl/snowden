@@ -9,7 +9,7 @@
     "bundle": "browserify demo.js --transform glslify | uglifyjs -cm > bundle.js"
   },
   "browser": {
-    "./load.js": "load-browser.js"
+    "./load.js": "./load-browser.js"
   },
   "author": {
     "name": "Hugh Kennedy",
