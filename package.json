@@ -1,0 +1,49 @@
+{
+  "name": "snowden",
+  "version": "1.0.0",
+  "description": "3D mesh of Snowden's Bust",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "budo demo.js:bundle.js --transform glslify",
+    "bundle": "browserify demo.js --transform glslify | uglifyjs -cm > bundle.js"
+  },
+  "browser": {
+    "./load.js": "load-browser.js"
+  },
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "http://hughsk.io/"
+  },
+  "dependencies": {
+    "parse-obj": "0.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^10.0.0",
+    "budo": "^4.0.0",
+    "canvas-fit": "^1.4.0",
+    "canvas-orbit-camera": "^1.0.2",
+    "eye-vector": "0.0.0",
+    "gl-context": "^0.1.1",
+    "gl-geometry": "^1.0.3",
+    "gl-mat4": "^1.1.2",
+    "gl-shader": "^4.0.1",
+    "glsl-diffuse-oren-nayar": "^1.0.2",
+    "glsl-specular-cook-torrance": "^2.0.1",
+    "glslify": "^2.1.2",
+    "normals": "^1.0.1",
+    "uglify-js": "^2.4.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stackgl/snowden.git"
+  },
+  "keywords": [
+    "ecosystem:stackgl"
+  ],
+  "homepage": "https://github.com/stackgl/snowden",
+  "bugs": {
+    "url": "https://github.com/stackgl/snowden/issues"
+  }
+}
